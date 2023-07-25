@@ -1,0 +1,22 @@
+/* media queries */
+
+
+@media screen and (max-width: 766px) {
+    .icon-header {
+        width: 15px;
+        height: 15px;
+    }
+
+    .icon-spotlight {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 766px) {
+
+}
+
+@media screen and (max-width: 480px) {
+    
+}

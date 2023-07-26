@@ -21,8 +21,15 @@ main, h1, h2, h3, h4, p {
     margin: 60px 0 30px 0;
 }
 
+.divider-black {
+    width: 100%;
+    margin: 60px 0 30px 0;
+    color: #FFFFEB;
+    background-color: #000000;
+}
+
 .section-label {
-    width: 65px;
+    width: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,6 +40,11 @@ main, h1, h2, h3, h4, p {
     display: flex;
     padding: 8px 20px;
     border-radius: 15px;
+}
+
+.section-label-white {
+    color: black;
+    background-color: #FFFFEB;
 }
 
 
@@ -319,6 +331,67 @@ main, h1, h2, h3, h4, p {
     justify-content: center;
 }
 
+.contact_me-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #000000;
+}
+
+.contact_me-elements-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.foo {
+    margin: 100px 0;
+}
+
+.contact_me-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Roboto Mono', monospace;
+    background: #000000;
+}
+
+.form-inputs-container {
+    display: grid;
+}
+
+.form-text {
+    font-family: 'Roboto Mono', monospace;
+    padding: 2em;
+    background-color: #000000;
+    border: 0.5px solid #FFFFEB;
+    color: #FFFFEB;
+}
+
+.form-text:focus {
+    outline-color: goldenrod;
+}
+
+.contact_me-form-button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-button-submit {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 150px;
+    height: 50px;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #000000;
+    border-radius: 15px;
+    border: 1px solid #FFFFEB;
+    color: #FFFFEB;
+}
+
 
 /* media queries */
 
@@ -458,6 +531,10 @@ main, h1, h2, h3, h4, p {
         flex-direction: column;
         align-items: center;
     }
+
+    .contact_me-form {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (max-width: 675px) {
@@ -472,6 +549,10 @@ main, h1, h2, h3, h4, p {
 
     .skills-container {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .form-text {
+        padding: 3em;
     }
 }
 
@@ -492,6 +573,10 @@ main, h1, h2, h3, h4, p {
 
     .portfolio-project-card-desk {
         margin: 15px 0px;
+    }
+
+    .foo {
+        margin: 60px 0;
     }
 }
 

@@ -7,7 +7,7 @@ import IconInstagram from "../../../assets/images/components/genericIcons/IconIn
 import terminalIcon from "../../../assets/images/terminal.png";
 import omarAriasDevPhoto from "../../../assets/images/myPhoto.png";
 
-export default function AboutMe() {
+export default function AboutMeSection() {
     return (
         <section className="about_me">
             <aside className="about_me-profile">

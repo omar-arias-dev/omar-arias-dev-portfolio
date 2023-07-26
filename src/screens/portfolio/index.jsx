@@ -1,19 +1,21 @@
 import Header from "./components/Header";
-import AboutMe from "./sections/AboutMe";
+import AboutMeSection from "./sections/AboutMeSection";
 import PortfolioSection from "./sections/PortfolioSection";
+import SkillsSection from "./sections/SkillsSection";
 
 import "./index.css";
-import SkillsSection from "./sections/SkillsSection";
+import ContactMeSection from "./sections/ContactMeSection";
 
 export default function Portfolio() {
     return (
         <main className="portfolio">
            <Header />
-           <AboutMe />
+           <AboutMeSection />
            <hr className="divider" />
            <PortfolioSection />
            <hr className="divider" />
            <SkillsSection />
+           <ContactMeSection />
         </main>
     );
 }

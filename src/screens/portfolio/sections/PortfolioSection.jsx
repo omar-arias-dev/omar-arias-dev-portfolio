@@ -17,7 +17,7 @@ import "./../index.css";
 export default function PortfolioSection() {
     return (
         <section className="portfolio-section">
-            <SectionLabel title="Portfolio" />
+            <SectionLabel title="Portfolio" id="portfolio-section" />
                 <div className="portfolio-section-projects-container">
                     <div className="project-style-mobile">
                         <ProjectCard

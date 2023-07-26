@@ -12,7 +12,7 @@ export default function AboutMeSection() {
         <section className="about_me">
             <aside className="about_me-profile">
                 <img src={terminalIcon} alt="Terminal Icon" className="about_me-profile-terminal_icon" />
-                <h1 className="about_me-profile-title">Omar Arias Dev</h1>
+                <h1 id="about_me-section" className="about_me-profile-title">Omar Arias Dev</h1>
                 <figure>
                     <img src={omarAriasDevPhoto} alt="Omar Arias Dev" className="about_me-profile_photo" />
                     <figcaption className="about_me-profile_photo-description">

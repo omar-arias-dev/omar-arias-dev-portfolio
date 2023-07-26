@@ -1,7 +1,7 @@
 import "./../index.css";
 
-export default function SectionLabel({ title, white }) {
+export default function SectionLabel({ title, id, white }) {
     return (
-        <label className={ white ? "section-label section-label-white" : "section-label" }>{title}</label>
+        <label id={id} className={ white ? "section-label section-label-white" : "section-label" }>{title}</label>
     );
 }

@@ -24,13 +24,14 @@ import IconVscode from "../../../assets/images/components/skillsIcons/IconVscode
 import IconDocker from "../../../assets/images/components/skillsIcons/IconDocker";
 import IconSlack from "../../../assets/images/components/skillsIcons/IconSlack";
 import IconWordpress from "../../../assets/images/components/skillsIcons/IconWordpress";
+import IconNginx from "../../../assets/images/components/skillsIcons/IconNginx";
 
 import "./../index.css";
 
 export default function SkillsSection() {
     return (
         <section className="skills-section">
-            <SectionLabel title="Skills" />
+            <SectionLabel title="Skills" id="skills-section" />
             <div className="skills-container">
                 <div className="skill-card-container">
                     <SkillCard skillName="Git" skillIcon={ IconGit } />
@@ -100,6 +101,9 @@ export default function SkillsSection() {
                 </div>
                 <div className="skill-card-container">
                     <SkillCard skillName="Wordpress" skillIcon={ IconWordpress } />
+                </div>
+                <div className="skill-card-container">
+                    <SkillCard skillName="NGINX" skillIcon={ IconNginx } />
                 </div>
             </div>
         </section>

@@ -14,16 +14,16 @@ export default function Header() {
             <nav className="portfolio-header-navbar">
                 <ul className="portfolio-header-navbar-list">
                     <li className="portfolio-header-navbar-list-item">
-                        <a href="#"><IconUser width={20} height={20} /><p>About Me</p></a>
+                        <a href="#about_me-section"><IconUser width={20} height={20} /><p>About Me</p></a>
                     </li>
                     <li className="portfolio-header-navbar-list-item">
-                        <a href="#"><IconDocument width={20} height={20} /><p>Portfolio</p></a>
+                        <a href="#portfolio-section"><IconDocument width={20} height={20} /><p>Portfolio</p></a>
                     </li>
                     <li className="portfolio-header-navbar-list-item">
-                        <a href="#"><IconSkills width={20} height={20} /><p>Skills</p></a>
+                        <a href="#skills-section"><IconSkills width={20} height={20} /><p>Skills</p></a>
                     </li>
                     <li className="portfolio-header-navbar-list-item">
-                        <a href="#">
+                        <a href="#contact_me-section">
                             <IconSend width={20} height={20} />
                             <p>Contact Me</p>
                         </a>

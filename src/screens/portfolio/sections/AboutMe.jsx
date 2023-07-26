@@ -1,10 +1,11 @@
+import IconGithub from "../../../assets/images/components/genericIcons/IconGithub";
+import IconLinkedIn from "../../../assets/images/components/genericIcons/IconLinkedIn";
+import IconEmail from "../../../assets/images/components/genericIcons/IconEmail";
+import IconTwitter from "../../../assets/images/components/genericIcons/IconTwitter";
+import IconInstagram from "../../../assets/images/components/genericIcons/IconInstagram";
+
 import terminalIcon from "../../../assets/images/terminal.png";
 import omarAriasDevPhoto from "../../../assets/images/myPhoto.png";
-import IconGithub from "../../../assets/images/components/IconGithub";
-import IconLinkedIn from "../../../assets/images/components/IconLinkedIn";
-import IconEmail from "../../../assets/images/components/IconEmail";
-import IconTwitter from "../../../assets/images/components/IconTwitter";
-import IconInstagram from "../../../assets/images/components/IconInstagram";
 
 export default function AboutMe() {
     return (

@@ -1,5 +1,3 @@
-import "./iconStyles.css";
-
 export default function IconReact(props) {
     return (
         <svg

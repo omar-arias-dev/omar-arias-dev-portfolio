@@ -1,34 +1,29 @@
-import "./iconStyles.css";
+import "./../iconStyles.css";
 
-export default function IconDownload(props) {
+export default function IconDocument(props) {
     return (
         <svg
             className="icon-header"
             xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
+            width="20"
+            height="20"
             viewBox="0 0 24 24"
             fill="none"
             {...props}
         >
             <path
-                d="M9 11v6l2-2M9 17l-2-2"
+                d="M21 7v10c0 3-1.5 5-5 5H8c-3.5 0-5-2-5-5V7c0-3 1.5-5 5-5h8c3.5 0 5 2 5 5Z"
                 stroke="#000000"
                 strokeWidth="1.5"
+                strokeMiterlimit="10"
                 strokeLinecap="round"
                 strokeLinejoin="round"
             ></path>
             <path
-                d="M22 10v5c0 5-2 7-7 7H9c-5 0-7-2-7-7V9c0-5 2-7 7-7h5"
+                d="M14.5 4.5v2c0 1.1.9 2 2 2h2M10 13l-2 2 2 2M14 13l2 2-2 2"
                 stroke="#000000"
                 strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-            ></path>
-            <path
-                d="M22 10h-4c-3 0-4-1-4-4V2l8 8Z"
-                stroke="#000000"
-                strokeWidth="1.5"
+                strokeMiterlimit="10"
                 strokeLinecap="round"
                 strokeLinejoin="round"
             ></path>

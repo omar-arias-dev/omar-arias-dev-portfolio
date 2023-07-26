@@ -22,7 +22,10 @@ main, h1, h2, h3, h4, p {
 }
 
 .section-label {
-    width: fit-content;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 12px;
     color: #FFFFEB;
     background-color: black;
@@ -141,6 +144,7 @@ main, h1, h2, h3, h4, p {
 .about_me-profile_photo {
     width: 25em;
     margin: 15px 0;
+    pointer-events: none;
 }
 
 .about_me-profile_photo-description {
@@ -266,6 +270,7 @@ main, h1, h2, h3, h4, p {
     min-width: 10em;
     max-width: 15em;
     border-radius: 10px;
+    pointer-events: none;
 }
 
 .portfolio-project-card-image-desk {
@@ -281,6 +286,39 @@ main, h1, h2, h3, h4, p {
     align-items: center;
     border-top: 1px solid black;
 }
+
+.skills-section {
+    width: 90%;
+}
+
+.skill-figure-container {
+    width: 120px;
+    height: 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.skill-figure-caption {
+    font-size: 25px;
+    text-align: center;
+}
+
+.skills-container {
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 25px;
+}
+
+.skill-card-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* media queries */
 
@@ -431,6 +469,10 @@ main, h1, h2, h3, h4, p {
     .portfolio-header-download_cv_button p {
         text-wrap: nowrap;
     }
+
+    .skills-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 @media screen and (max-width: 615px) {
@@ -487,7 +529,9 @@ main, h1, h2, h3, h4, p {
         margin: 10px 0;
     }
 
-
+    .skills-container {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (max-width: 425px) {

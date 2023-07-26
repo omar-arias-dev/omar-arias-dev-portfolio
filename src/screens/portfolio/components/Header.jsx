@@ -1,12 +1,12 @@
-import IconDownload from "../../../assets/images/components/IconDownload";
+import IconDownload from "../../../assets/images/components/genericIcons/IconDownload";
 
 import "./../index.css";
 
 import oaLogo from "./../../../assets/images/OA.png";
-import IconUser from "../../../assets/images/components/IconUser";
-import IconDocument from "../../../assets/images/components/IconDocuments";
-import IconSkills from "../../../assets/images/components/IconSkills";
-import IconSend from "../../../assets/images/components/IconSend"
+import IconUser from "../../../assets/images/components/genericIcons/IconUser";
+import IconDocument from "../../../assets/images/components/genericIcons/IconDocuments";
+import IconSkills from "../../../assets/images/components/genericIcons/IconSkills";
+import IconSend from "../../../assets/images/components/genericIcons/IconSend"
 
 export default function Header() {
     return (

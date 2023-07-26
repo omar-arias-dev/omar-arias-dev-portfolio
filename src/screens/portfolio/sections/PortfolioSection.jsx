@@ -1,9 +1,9 @@
 import SectionLabel from "../components/SectionLabel";
 import ProjectCard from "../components/ProjectCard";
 
-import IconReact from "../../../assets/images/components/IconReact";
-import IconSpring from "../../../assets/images/components/IconSpring";
-import IconPhp from "../../../assets/images/components/IconPhp";
+import IconReact from "../../../assets/images/components/skillsIcons/IconReact";
+import IconSpring from "../../../assets/images/components/skillsIcons/IconSpring";
+import IconPhp from "../../../assets/images/components/skillsIcons/IconPhp";
 
 import fsGame from "../../../assets/images/fsMain.png";
 import guessPokemonHome from "../../../assets/images/guessPokemonHome.png";

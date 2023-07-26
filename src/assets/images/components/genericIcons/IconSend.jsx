@@ -1,4 +1,4 @@
-import "./iconStyles.css";
+import "./../iconStyles.css";
 
 export default function IconSend(props) {
     return (

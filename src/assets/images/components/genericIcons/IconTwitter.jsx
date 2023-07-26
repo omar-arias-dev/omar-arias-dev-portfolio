@@ -1,3 +1,5 @@
+import "./../iconStyles.css";
+
 export default function IconTwitterFill(props) {
     return (
         <svg

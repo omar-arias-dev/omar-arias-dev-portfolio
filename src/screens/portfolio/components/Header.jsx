@@ -1,12 +1,13 @@
-import IconDownload from "../../../assets/images/components/genericIcons/IconDownload";
-
-import "./../index.css";
-
 import oaLogo from "./../../../assets/images/OA.png";
 import IconUser from "../../../assets/images/components/genericIcons/IconUser";
 import IconDocument from "../../../assets/images/components/genericIcons/IconDocuments";
 import IconSkills from "../../../assets/images/components/genericIcons/IconSkills";
 import IconSend from "../../../assets/images/components/genericIcons/IconSend"
+import IconDownload from "../../../assets/images/components/genericIcons/IconDownload";
+
+import CVOmarArias from "../../../assets/docs/CV-OmarArias.pdf";
+
+import "./../index.css";
 
 export default function Header() {
     return (
@@ -32,10 +33,16 @@ export default function Header() {
             </nav>
             <section className="portfolio-header-section">
                 <img src={oaLogo} alt="Omar Arias Dev Logo" className="portfolio-header-icon" />
-                <button className="portfolio-header-download_cv_button">
+                <a
+                    href={CVOmarArias}
+                    download="CV-OMAR_ARIAS"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="portfolio-header-download_cv_button"
+                >
                     <IconDownload width={20} height={20} />
                     <p>Download CV</p>
-                </button>
+                </a>
             </section>
         </header>
     );

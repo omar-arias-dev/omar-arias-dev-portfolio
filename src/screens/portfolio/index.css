@@ -301,6 +301,38 @@ main, h1, h2, h3, h4, p {
     border-top: 1px solid black;
 }
 
+
+
+.portfolio-section-career {
+    margin: 50px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-section-career-image {
+    pointer-events: none;
+}
+
+@media screen and (max-width: 1310px) {
+    .portfolio-section-career-image {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 950px) {
+    .portfolio-section-career-image {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 425px) {
+    .portfolio-section-career-image {
+        width: 80%;
+    }
+}
+
+
+/* Skills section */
+
 .skills-section {
     width: 90%;
 }

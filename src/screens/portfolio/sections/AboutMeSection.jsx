@@ -25,21 +25,35 @@ export default function AboutMeSection() {
                 <p className="about_me-spotlight-motto">Coding the best solutions for all software projects.</p>
                 <div className="about_me-spotlight-links">
                     <span className="about_me-spotlight-links-bracket">{"{"}</span>
-                    <a href="#">
+                    <a href="https://github.com/omar-arias-dev" target="_blank" rel="noreferrer">
                         <IconGithub width={58} height={58} />
                     </a>
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/omar-arias-dev/" target="_blank" rel="noreferrer">
                         <IconLinkedIn width={58} height={58} />
                     </a>
-                    <a href="#">
+                    <a href="mailto:omar.arias.dev@gmail.com">
                         <IconEmail width={58} height={58} />
                     </a>
                     <span className="about_me-spotlight-links-bracket">{"}"}</span>
                 </div>
                 <div className="about_me-spotlight-social_links">
                     <span className="about_me-spotlight-links-angle_bracket">{"["}</span>
-                    <a className="about_me-spotlight-social_link twit"><IconTwitter width={30} height={30} /></a>
-                    <a className="about_me-spotlight-social_link insta"><IconInstagram width={30} height={30} /></a>
+                    <a
+                        href="https://twitter.com/omarariasdev"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="about_me-spotlight-social_link twit"
+                    >
+                        <IconTwitter width={30} height={30} />
+                    </a>
+                    <a
+                        href="https://www.instagram.com/omarariasdev/"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="about_me-spotlight-social_link insta"
+                    >
+                        <IconInstagram width={30} height={30} />
+                    </a>
                     <span className="about_me-spotlight-links-angle_bracket">{"]"}</span>
                 </div>
             </aside>

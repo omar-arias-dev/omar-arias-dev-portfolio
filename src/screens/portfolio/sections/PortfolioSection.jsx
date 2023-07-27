@@ -2,6 +2,7 @@ import useMediaQuery from "../../../hooks/useMediaQuery";
 
 import SectionLabel from "../components/SectionLabel";
 import ProjectCard from "../components/ProjectCard";
+import ProjectLinkedCard from "../components/ProjectLinkedCard";
 
 import IconReact from "../../../assets/images/components/skillsIcons/IconReact";
 import IconSpring from "../../../assets/images/components/skillsIcons/IconSpring";
@@ -36,22 +37,22 @@ export default function PortfolioSection() {
             <SectionLabel title="Portfolio" id="portfolio-section" />
             <div className="portfolio-section-projects-container">
                 <div className="project-style-mobile">
-                    <ProjectCard
-                        link="#"
+                    <ProjectLinkedCard
                         image={fsGame}
                         projectTitle="Fast Sum Mobile App"
                         icon={ IconReact }
                         imageTitle="Fast Sum"
-                        />
-                    <ProjectCard
-                        link="#"
+                        project="fast-sum"
+                    />
+                    <ProjectLinkedCard
                         image={smsApiGatewayCover}
                         projectTitle="SMS API Gateway"
                         icon={ IconSpring }
                         imageTitle="SMS API Gateway"
+                        project="sms-api-gateway"
                     />
                     <ProjectCard
-                        link="#"
+                        link="https://bustracker.app/"
                         image={bustrackerApp}
                         projectTitle="Bustracker (Mobile, Front, Back)"
                         icon={ IconPhp }
@@ -60,7 +61,7 @@ export default function PortfolioSection() {
                 </div>
                 <div className="project-style-desk">
                     <ProjectCard
-                        link="#"
+                        link="https://github.com/omar-arias-dev/guess-the-pokemon"
                         image={guessPokemonHome}
                         projectTitle="Guess the Pókemon Game"
                         icon={ IconReact }
@@ -68,7 +69,7 @@ export default function PortfolioSection() {
                         desk
                     />
                     <ProjectCard
-                        link="#"
+                        link="https://github.com/omar-arias-dev/React-Frontend-Mentor-Calculator"
                         image={calcDesk}
                         projectTitle="Frontend Mentor Calculator App"
                         icon={ IconReact }
@@ -76,7 +77,7 @@ export default function PortfolioSection() {
                         desk
                     />
                     <ProjectCard
-                        link="#"
+                        link="https://github.com/omar-arias-dev/React-Frontend-Mentor-TODOapp"
                         image={todoAppDesk}
                         projectTitle="Frontend Mentor TODO App"
                         icon={ IconReact }

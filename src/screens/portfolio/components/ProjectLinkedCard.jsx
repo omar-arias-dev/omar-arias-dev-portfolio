@@ -1,15 +1,15 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
 import "./../index.css";
 
-export default function ProjectCard({ image, link, imageTitle, icon: FrameworkIcon, projectTitle, desk }) {
+export default function ProjectLinkedCard({ desk, image, imageTitle, icon: FrameworkIcon, projectTitle, project }) {
 
     const [showMainFramework, setShowMainFramework] = useState(false);
 
     return (
-        <a
-            href={link}
-            target="_blank"
-            rel="noreferrer"
+        <Link
+            to={`projects/${project}`}
             className={desk ? "portfolio-project-card-desk" : "portfolio-project-card"}
             onMouseEnter={() => setShowMainFramework(true)}
             onMouseLeave={() => setShowMainFramework(false)}
@@ -29,6 +29,6 @@ export default function ProjectCard({ image, link, imageTitle, icon: FrameworkIc
                     <h3 className="portfolio-project-card-title">{projectTitle}</h3>
                 }
             </footer>
-        </a>
-    );
+        </Link>
+    )
 }

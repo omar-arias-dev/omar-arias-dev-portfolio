@@ -1,5 +1,12 @@
 /* media queries */
 
+.icon-header {
+    stroke: black;
+}
+
+.icon-header:hover {
+    stroke: #FFFFEB;
+}
 
 @media screen and (max-width: 766px) {
     .icon-header {

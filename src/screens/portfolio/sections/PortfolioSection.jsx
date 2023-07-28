@@ -14,7 +14,7 @@ import calcDesk from "../../../assets/images/calcDesk.jpg";
 import todoAppDesk from "../../../assets/images/todoAppDesk.jpg";
 import smsApiGatewayCover from "../../../assets/images/smsApiGatewayCover.png";
 import bustrackerApp from "../../../assets/images/bustrackerApp.png";
-import carrer from "../../../assets/images/career.png";
+import career from "../../../assets/images/career.png";
 import careerTablet from "../../../assets/images/career-tablet.png"; 
 import careerMobile from "../../../assets/images/career-mobile.png"; 
 
@@ -92,7 +92,7 @@ export default function PortfolioSection() {
                     className="portfolio-section-career-image"
                     src={
                         monitorQuery ?
-                            carrer
+                            career
                         :
                         tabletQuery ?
                             careerTablet
@@ -102,7 +102,7 @@ export default function PortfolioSection() {
                         :
                         careerMobile
                     }
-                    alt="Carrer"
+                    alt="career"
                 />
             </div>
         </section>

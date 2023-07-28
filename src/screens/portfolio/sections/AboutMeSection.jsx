@@ -1,3 +1,5 @@
+import useMediaQuery from "../../../hooks/useMediaQuery";
+
 import IconGithub from "../../../assets/images/components/genericIcons/IconGithub";
 import IconLinkedIn from "../../../assets/images/components/genericIcons/IconLinkedIn";
 import IconEmail from "../../../assets/images/components/genericIcons/IconEmail";
@@ -7,7 +9,18 @@ import IconInstagram from "../../../assets/images/components/genericIcons/IconIn
 import terminalIcon from "../../../assets/images/terminal.png";
 import omarAriasDevPhoto from "../../../assets/images/myPhoto.png";
 
+function useMediaQueries() {
+    const monitorQuery = useMediaQuery("(min-width: 1024px)");
+    const tabletQuery = useMediaQuery("(min-width: 768px)");
+    const mobileQuery = useMediaQuery("(min-width: 425px)");
+
+    return { mobileQuery, tabletQuery, monitorQuery };
+}
+
 export default function AboutMeSection() {
+
+    const { mobileQuery, tabletQuery, monitorQuery } = useMediaQueries();
+
     return (
         <section className="about_me">
             <aside className="about_me-profile">
@@ -24,27 +37,49 @@ export default function AboutMeSection() {
                 <h1 className="about_me-spotlight-title">Continuous<br />results</h1>
                 <p className="about_me-spotlight-motto">Coding the best solutions for all software projects.</p>
                 <div className="about_me-spotlight-links">
-                    <span className="about_me-spotlight-links-bracket">{"{"}</span>
-                    <a href="https://github.com/omar-arias-dev" target="_blank" rel="noreferrer">
-                        <IconGithub width={58} height={58} />
+                    <a
+                        href="https://github.com/omar-arias-dev"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="about_me-spotlight-link github"
+                    >
+                        <IconGithub
+                            width={monitorQuery ? 58 : tabletQuery ? 40 : mobileQuery ? 38 : 38}
+                            height={monitorQuery ? 58 : tabletQuery ? 40 : mobileQuery ? 38 : 38}
+                        />
                     </a>
-                    <a href="https://www.linkedin.com/in/omar-arias-dev/" target="_blank" rel="noreferrer">
-                        <IconLinkedIn width={58} height={58} />
+                    <a
+                        href="https://www.linkedin.com/in/omar-arias-dev/"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="about_me-spotlight-link linkedin"
+                    >
+                        <IconLinkedIn
+                            width={monitorQuery ? 58 : tabletQuery ? 40 : mobileQuery ? 38 : 38}
+                            height={monitorQuery ? 58 : tabletQuery ? 40 : mobileQuery ? 38 : 38}
+                        />
                     </a>
-                    <a href="mailto:omar.arias.dev@gmail.com">
-                        <IconEmail width={58} height={58} />
+                    <a
+                        href="mailto:omar.arias.dev@gmail.com"
+                        className="about_me-spotlight-link mail"
+                    >
+                        <IconEmail
+                            width={monitorQuery ? 58 : tabletQuery ? 40 : mobileQuery ? 38 : 38}
+                            height={monitorQuery ? 58 : tabletQuery ? 40 : mobileQuery ? 38 : 38}
+                        />
                     </a>
-                    <span className="about_me-spotlight-links-bracket">{"}"}</span>
                 </div>
                 <div className="about_me-spotlight-social_links">
-                    <span className="about_me-spotlight-links-angle_bracket">{"["}</span>
                     <a
                         href="https://twitter.com/omarariasdev"
                         target="_blank"
                         rel="noreferrer"
                         className="about_me-spotlight-social_link twit"
                     >
-                        <IconTwitter width={30} height={30} />
+                        <IconTwitter
+                            width={monitorQuery ? 50 : tabletQuery ? 38 : mobileQuery ? 35 : 35}
+                            height={monitorQuery ? 50 : tabletQuery ? 38 : mobileQuery ? 35 : 35}
+                        />
                     </a>
                     <a
                         href="https://www.instagram.com/omarariasdev/"
@@ -52,9 +87,11 @@ export default function AboutMeSection() {
                         rel="noreferrer"
                         className="about_me-spotlight-social_link insta"
                     >
-                        <IconInstagram width={30} height={30} />
+                        <IconInstagram
+                            width={monitorQuery ? 50 : tabletQuery ? 38 : mobileQuery ? 35 : 35}
+                            height={monitorQuery ? 50 : tabletQuery ? 38 : mobileQuery ? 35 : 35}
+                        />
                     </a>
-                    <span className="about_me-spotlight-links-angle_bracket">{"]"}</span>
                 </div>
             </aside>
         </section>

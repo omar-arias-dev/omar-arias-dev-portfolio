@@ -54,7 +54,6 @@ main, h1, h2, h3, h4, p {
 .portfolio-header {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -78,7 +77,16 @@ main, h1, h2, h3, h4, p {
 }
 
 .portfolio-header-navbar-list-item {
-    margin: 0 20px;
+    width: 115px;
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.portfolio-header-navbar-list-item:hover {
+    background-color: #000000;
+    color: #EEEEDC;
 }
 
 .portfolio-header-navbar-list-item a {
@@ -162,9 +170,10 @@ main, h1, h2, h3, h4, p {
 }
 
 .about_me-profile_photo-description {
-    width: 55%;
-    text-align: center;
+    width: 50%;
+    line-height: 30px;
     font-size: 25px;
+    text-align: center;
     pointer-events: none;
 }
 
@@ -208,10 +217,10 @@ main, h1, h2, h3, h4, p {
 }
 
 .about_me-spotlight-social_link {
-    display: flex;
+    /* display: flex;
     padding: 6px;
     border-radius: 100%;
-    border: 2px solid black;
+    border: 2px solid black; */
 }
 
 .about_me-spotlight-links-angle_bracket {
@@ -467,10 +476,6 @@ main, h1, h2, h3, h4, p {
 /* media queries */
 
 @media screen and (min-width: 1025px) {
-    .portfolio-header-navbar-list-item {
-        margin: 0 10px;
-    }
-
     .portfolio-header-navbar-list-item p {
         text-wrap: nowrap;
         font-size: smaller;
@@ -489,7 +494,7 @@ main, h1, h2, h3, h4, p {
     }
 
     .about_me-profile_photo-description {
-        width: 75%;
+        width: 65%;
         font-size: 20px;
     }
 
@@ -507,9 +512,6 @@ main, h1, h2, h3, h4, p {
 }
 
 @media screen and (max-width: 1024px) {
-    .portfolio-header-navbar-list-item {
-        margin: 0 10px;
-    }
 
     .portfolio-header-navbar-list-item p {
         text-wrap: nowrap;
@@ -554,6 +556,7 @@ main, h1, h2, h3, h4, p {
 
 @media screen and (max-width: 768px) {
     .portfolio-header {
+        flex-direction: column-reverse;
         padding-bottom: 10px;
     }
 
@@ -591,7 +594,7 @@ main, h1, h2, h3, h4, p {
     }
 
     .about_me-spotlight-links {
-        width: 40%;
+        width: 65%;
     }
 
     .about_me-spotlight-social_links {
@@ -663,6 +666,10 @@ main, h1, h2, h3, h4, p {
         margin-bottom: 0px;
     }
 
+    .portfolio-header-navbar {
+        display: none;
+    }
+
     .about_me {
         flex-direction: column;
         align-items: center;
@@ -700,6 +707,10 @@ main, h1, h2, h3, h4, p {
         width: 100%;
     }
 
+    .portfolio-header-navbar-list-item {
+        width: 80px;
+    }
+
     .about_me-spotlight-social_links {
         margin: 10px 0;
     }
@@ -723,7 +734,7 @@ main, h1, h2, h3, h4, p {
 
 @media screen and (max-width: 375px) {
     .about_me-spotlight-links {
-        justify-content: center;
+        justify-content: space-around;
     }
 
     .portfolio-header-navbar-list {

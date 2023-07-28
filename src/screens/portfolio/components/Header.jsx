@@ -14,21 +14,30 @@ export default function Header() {
         <header className="portfolio-header">
             <nav className="portfolio-header-navbar">
                 <ul className="portfolio-header-navbar-list">
-                    <li className="portfolio-header-navbar-list-item">
-                        <a href="#about_me-section"><IconUser width={20} height={20} /><p>About Me</p></a>
-                    </li>
-                    <li className="portfolio-header-navbar-list-item">
-                        <a href="#portfolio-section"><IconDocument width={20} height={20} /><p>Portfolio</p></a>
-                    </li>
-                    <li className="portfolio-header-navbar-list-item">
-                        <a href="#skills-section"><IconSkills width={20} height={20} /><p>Skills</p></a>
-                    </li>
-                    <li className="portfolio-header-navbar-list-item">
-                        <a href="#contact_me-section">
+                    <a href="#about_me-section">
+                        <li className="portfolio-header-navbar-list-item">
+                            <IconUser width={20} height={20} />
+                            <p>About Me</p>
+                        </li>
+                    </a>
+                    <a href="#portfolio-section">
+                        <li className="portfolio-header-navbar-list-item">
+                            <IconDocument width={20} height={20} />
+                            <p>Portfolio</p>
+                        </li>
+                    </a>
+                    <a href="#skills-section">
+                        <li className="portfolio-header-navbar-list-item">
+                            <IconSkills width={20} height={20} />
+                            <p>Skills</p>
+                        </li>
+                    </a>
+                    <a href="#contact_me-section">
+                        <li className="portfolio-header-navbar-list-item">
                             <IconSend width={20} height={20} />
                             <p>Contact Me</p>
-                        </a>
-                    </li>
+                        </li>
+                    </a>
                 </ul>
             </nav>
             <section className="portfolio-header-section">

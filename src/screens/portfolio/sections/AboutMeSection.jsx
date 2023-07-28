@@ -44,8 +44,8 @@ export default function AboutMeSection() {
                         className="about_me-spotlight-link github"
                     >
                         <IconGithub
-                            width={monitorQuery ? 58 : tabletQuery ? 40 : mobileQuery ? 38 : 38}
-                            height={monitorQuery ? 58 : tabletQuery ? 40 : mobileQuery ? 38 : 38}
+                            width={monitorQuery ? 55 : tabletQuery ? 36 : mobileQuery ? 30 : 30}
+                            height={monitorQuery ? 55 : tabletQuery ? 36 : mobileQuery ? 30 : 30}
                         />
                     </a>
                     <a
@@ -55,8 +55,8 @@ export default function AboutMeSection() {
                         className="about_me-spotlight-link linkedin"
                     >
                         <IconLinkedIn
-                            width={monitorQuery ? 58 : tabletQuery ? 40 : mobileQuery ? 38 : 38}
-                            height={monitorQuery ? 58 : tabletQuery ? 40 : mobileQuery ? 38 : 38}
+                            width={monitorQuery ? 55 : tabletQuery ? 36 : mobileQuery ? 30 : 30}
+                            height={monitorQuery ? 55 : tabletQuery ? 36 : mobileQuery ? 30 : 30}
                         />
                     </a>
                     <a
@@ -64,8 +64,8 @@ export default function AboutMeSection() {
                         className="about_me-spotlight-link mail"
                     >
                         <IconEmail
-                            width={monitorQuery ? 58 : tabletQuery ? 40 : mobileQuery ? 38 : 38}
-                            height={monitorQuery ? 58 : tabletQuery ? 40 : mobileQuery ? 38 : 38}
+                            width={monitorQuery ? 55 : tabletQuery ? 36 : mobileQuery ? 30 : 30}
+                            height={monitorQuery ? 55 : tabletQuery ? 36 : mobileQuery ? 30 : 30}
                         />
                     </a>
                 </div>
@@ -77,8 +77,8 @@ export default function AboutMeSection() {
                         className="about_me-spotlight-social_link twit"
                     >
                         <IconTwitter
-                            width={monitorQuery ? 50 : tabletQuery ? 38 : mobileQuery ? 35 : 35}
-                            height={monitorQuery ? 50 : tabletQuery ? 38 : mobileQuery ? 35 : 35}
+                            width={monitorQuery ? 45 : tabletQuery ? 33 : mobileQuery ? 30 : 30}
+                            height={monitorQuery ? 45 : tabletQuery ? 33 : mobileQuery ? 30 : 30}
                         />
                     </a>
                     <a
@@ -88,8 +88,8 @@ export default function AboutMeSection() {
                         className="about_me-spotlight-social_link insta"
                     >
                         <IconInstagram
-                            width={monitorQuery ? 50 : tabletQuery ? 38 : mobileQuery ? 35 : 35}
-                            height={monitorQuery ? 50 : tabletQuery ? 38 : mobileQuery ? 35 : 35}
+                            width={monitorQuery ? 45 : tabletQuery ? 33 : mobileQuery ? 30 : 30}
+                            height={monitorQuery ? 45 : tabletQuery ? 33 : mobileQuery ? 30 : 30}
                         />
                     </a>
                 </div>

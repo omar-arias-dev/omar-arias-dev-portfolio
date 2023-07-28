@@ -52,14 +52,17 @@ main, h1, h2, h3, h4, p {
 /* Header */
 
 .portfolio-header {
+    width: 100vw;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid black;
     margin-bottom: 20px;
-    width: 80%;
+    position: fixed;
+    background-color: #FFFFEB;
 }
 
 .portfolio-header * {
@@ -83,6 +86,7 @@ main, h1, h2, h3, h4, p {
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+    transition: background-color 0.1s ease-in;
 }
 .portfolio-header-navbar-list-item:hover {
     background-color: #000000;
@@ -118,10 +122,17 @@ main, h1, h2, h3, h4, p {
     padding: 5px 10px;
     border-radius: 30px;
     border: 1px solid black;
+    transition: background-color 0.1s ease-in;
 }
 
 .portfolio-header-download_cv_button:hover {
     cursor: pointer;
+    background-color: #000000;
+    color: #EEEEDC;
+}
+
+.portfolio-header-download_cv_button:hover > svg * {
+    stroke: #EEEEDC;
 }
 
 .portfolio-header-download_cv_button p {
@@ -133,6 +144,7 @@ main, h1, h2, h3, h4, p {
 /* About Me */
 
 .about_me {
+    margin-top: 100px;
     width: 80%;
     display: flex;
     flex-direction: row;
@@ -204,9 +216,12 @@ main, h1, h2, h3, h4, p {
     width: 40%;
 }
 
-.about_me-spotlight-links-bracket {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 60px;
+.about_me-spotlight-social_link:hover > svg *,
+.about_me-spotlight-social_link:hover,
+.about_me-spotlight-link:hover > svg *,
+.about_me-spotlight-link:hover {
+    stroke: #ACA885;
+    fill: #ACA885;
 }
 
 .about_me-spotlight-social_links {
@@ -565,6 +580,10 @@ main, h1, h2, h3, h4, p {
         height: 30px;
     }
 
+    .about_me {
+        margin-top: 120px;
+    }
+
     .about_me-profile-terminal_icon {
         width: 100px;
     }
@@ -606,6 +625,10 @@ main, h1, h2, h3, h4, p {
         align-items: center;
     }
 
+    .portfolio-section-career-image {
+        width: 40%;
+    }
+
     .contact_me-form {
         grid-template-columns: 1fr;
     }
@@ -628,6 +651,10 @@ main, h1, h2, h3, h4, p {
 
     .skills-container {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .portfolio-section-career-image {
+        width: 50%;
     }
 
     .form-text {
@@ -671,6 +698,7 @@ main, h1, h2, h3, h4, p {
     }
 
     .about_me {
+        margin-top: 60px;
         flex-direction: column;
         align-items: center;
         width: 95%;
@@ -700,6 +728,10 @@ main, h1, h2, h3, h4, p {
     .skills-container {
         grid-template-columns: 1fr 1fr;
     }
+
+    .portfolio-section-career-image {
+        width: 60%;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -717,6 +749,10 @@ main, h1, h2, h3, h4, p {
 
     .about_me-spotlight {
         flex-direction: column-reverse;
+    }
+
+    .about_me-spotlight-motto {
+        display: none;
     }
 
     .portfolio-project-card-desk {

@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 
 import ReCAPTCHA from "react-google-recaptcha";
 
-import IconSend from "../../../assets/images/components/genericIcons/IconSend";
+import IconSendMessage from "../../../assets/images/components/genericIcons/IconSendMessage";
 
 import "./../index.css";
 
@@ -56,11 +56,11 @@ export default function ContactMeForm() {
                     theme="dark"
                 />
                 {
-                    validCaptcha === false && <p className="form-captcha-message">Do the captcha</p>
+                    validCaptcha === false && <p className="form-captcha-message">Please complete the captcha to proceed.</p>
                 }
                 <button className="form-button-submit">
                     Send
-                    <IconSend fill="white" />
+                    <IconSendMessage />
                 </button>
             </div>
         </form>

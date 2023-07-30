@@ -16,6 +16,19 @@ main, h1, h2, h3, h4, p {
     background-color: #FFFFEB;
 }
 
+.button-to_top {
+    position: fixed;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 25%;
+    border-style: solid;
+    border: 1px solid black;
+    background-color: #FFFFEB;
+}
+
 
 .divider {
     width: 90%;
@@ -138,6 +151,21 @@ main, h1, h2, h3, h4, p {
 .portfolio-header-download_cv_button p {
     margin: 0 5px;
     font-size: 14px;
+}
+
+.portfolio-header-hamburger-menu-button {
+    display: none;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFEB;
+    border-style: solid;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.portfolio-header-hamburger-menu-button:hover {
+    background-color: #EEEEDC;
 }
 
 
@@ -626,7 +654,7 @@ main, h1, h2, h3, h4, p {
     }
 
     .portfolio-section-career-image {
-        width: 40%;
+        width: 80%;
     }
 
     .contact_me-form {
@@ -693,10 +721,14 @@ main, h1, h2, h3, h4, p {
         margin-bottom: 0px;
     }
 
-    .portfolio-header-navbar {
+    .switch-menu {
         display: none;
     }
-
+    
+    .portfolio-header-hamburger-menu-button {
+        display: flex;
+    }
+    
     .about_me {
         margin-top: 60px;
         flex-direction: column;
@@ -739,6 +771,11 @@ main, h1, h2, h3, h4, p {
         width: 100%;
     }
 
+    .button-to_top {
+        width: 40px;
+        height: 40px;
+    }
+
     .portfolio-header-navbar-list-item {
         width: 80px;
     }
@@ -755,6 +792,12 @@ main, h1, h2, h3, h4, p {
         display: none;
     }
 
+    .portfolio-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .portfolio-project-card-desk {
         width: 95%;
     }
@@ -765,6 +808,16 @@ main, h1, h2, h3, h4, p {
 
     .project-style-mobile, .project-style-desk {
         width: 100%;
+    }
+
+    .skills-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact_me-elements-container {
+        align-items: center;
     }
 }
 

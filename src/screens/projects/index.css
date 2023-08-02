@@ -1,0 +1,127 @@
+.project-fast-sum-container {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.project-fast-sum-container h1 {
+    font-size: 60px;
+}
+
+.project-fast-sum-image {
+    width: 150px;
+    filter: blur(5px);
+    pointer-events: none;
+}
+
+.project-fast-sum-container p {
+    font-size: 30px;
+}
+
+.project-sms-api-gateway-container {
+    width: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sms-api-gateway-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sms-api-gateway-header h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.sms-api-gateway-header h3 {
+    font-size: 30px;
+}
+
+.sms-api-gateway-tools-section {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.sms-api-gateway-tools-section h4 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.sms-api-gateway-tools-images-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.sms-api-gateway-tools-images-list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sms-api-gateway-tools-images-list-item-title {
+    font-size: 20px;
+}
+
+.sms-api-gateway-history-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.sms-api-gateway-history-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.sms-api-gateway-image {
+    min-width: 300px;
+}
+
+.sms-api-gateway-image.image-code {
+    width: 500px;
+}
+
+.sms-api-gateway-image.image-diploma {
+    width: 500px;
+}
+
+.sms-api-gateway-image.image-me {
+    width: 200px;
+}
+
+@media screen and (max-width: 500px) {
+    .sms-api-gateway-image.image-code {
+        width: 250px;
+    }
+    .sms-api-gateway-image.image-diploma {
+        width: 250px;
+    }
+    .sms-api-gateway-image.image-me {
+        width: 125px;
+    }
+
+    .sms-api-gateway-header h1 {
+        text-align: center;
+    }
+    .sms-api-gateway-header h1, h3 {
+        text-align: center;
+    }
+
+    .sms-api-gateway-tools-section h4 {
+        text-align: center;
+    }
+}

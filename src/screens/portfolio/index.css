@@ -761,6 +761,23 @@ main, h1, h2, h3, h4, p {
         grid-template-columns: 1fr 1fr;
     }
 
+    .portfolio-project-card-image-container {
+        width: 90%;
+    }
+
+    .portfolio-project-card-desk {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .portfolio-project-card-image-container {
+        width: 90%;
+    }
+
+    .portfolio-project-card-image-desk {
+        width: 95%;
+    }
+
     .portfolio-section-career-image {
         width: 60%;
     }

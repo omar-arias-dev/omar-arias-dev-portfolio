@@ -9,24 +9,24 @@ import ErrorPage from '../screens/error';
 
 export const router = createBrowserRouter([
     {
-        path: "/",
+        path: "/omar-arias-dev-portfolio/",
         element: <Portfolio />,
         errorElement: <ErrorPage />
     },
     {
-        path: "/about",
+        path: "/omar-arias-dev-portfolio/about",
         element: <About />,
     },
     {
-        path: "/projects",
+        path: "/omar-arias-dev-portfolio/projects",
         element: <Projects />,
     },
     {
-        path: "/projects/fast-sum",
+        path: "/omar-arias-dev-portfolio/projects/fast-sum",
         element: <ProjectFastSum />,
     },
     {
-        path: "/projects/sms-api-gateway",
+        path: "/omar-arias-dev-portfolio/projects/sms-api-gateway",
         element: <ProjectSmsApiGateway />,
     },
 ]);
